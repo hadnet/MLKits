@@ -30,7 +30,7 @@ canvas {
 }
 
 .wrapper {
-  margin: 20px;
+  margin: 10px -70px 10px 25px;
 }
 
 .x-axis {
@@ -55,7 +55,7 @@ canvas {
 
 .x-position {
   position: absolute;
-  right: 10px;
+  right: 100px;
 }
 
 .target-wrapper > div {
