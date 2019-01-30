@@ -1,4 +1,4 @@
-const tf =  require('@tensorflow/tfjs-node');
+const tf =  require('@tensorflow/tfjs-node');  // add sufixx -gpu to tfjs-node if GPU is CUDA
 const loadCSV = require('./load-csv');
 
 function knn(features, labels, predictionPoint, k) {
