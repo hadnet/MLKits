@@ -1,5 +1,4 @@
-require('@tensorflow/tfjs-node');
-const tf = require('@tensorflow/tfjs');
+const tf =  require('@tensorflow/tfjs-node');
 const loadCSV = require('./load-csv');
 
 function knn(features, labels, predictionPoint, k) {
