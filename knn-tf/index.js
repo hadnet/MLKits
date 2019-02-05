@@ -1,4 +1,5 @@
-const tf =  require('@tensorflow/tfjs-node');  // add sufix -gpu to tfjs-node if GPU is CUDA
+const tf =  require('@tensorflow/tfjs-node-gpu');  // takes 25 secs to complete the task
+// const tf = require('@tensorflow/tfjs-node'); // takes 27 secs to complete the task
 const loadCSV = require('./load-csv');
 
 function knn(features, labels, predictionPoint, k) {
