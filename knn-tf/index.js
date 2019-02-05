@@ -1,5 +1,6 @@
-const tf =  require('@tensorflow/tfjs-node-gpu');  // takes 25 secs to complete the task
-// const tf = require('@tensorflow/tfjs-node'); // takes 27 secs to complete the task
+// node-gpu is indicated for CUDA gpu's
+const tf =  require('@tensorflow/tfjs-node-gpu');  // using a RADEON HD6750 takes 22 secs to complete the task
+// const tf = require('@tensorflow/tfjs-node'); // with CPU takes 26 secs to complete the task
 const loadCSV = require('./load-csv');
 
 function knn(features, labels, predictionPoint, k) {
