@@ -3,11 +3,11 @@ const tf = require('@tensorflow/tfjs');
 const _ = require('lodash');
 
 class LinearRegression {
-    constructor(features, labels, options = {learningRate: 0.1, iterations: 1000}) {
+    constructor(features, labels, options) {
         this.features = this.processFeatures(features);
         this.labels = tf.tensor(labels);
         this.mseHistory = [];
-        this.options = options;
+        this.options = Object.assign({learningRate: 0.1, iterations: 1000}, options);
         this.weights = tf.zeros([this.features.shape[1], 1]);
     }
 
